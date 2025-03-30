@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PockeTalke 
 
-## Getting Started
+PockeTalke is a sleek, lightweight AI-powered chatbot that provides real-time responses in a minimalistic chat interface. Built with **React, Framer Motion, and Tailwind CSS**, it offers a smooth and interactive user experience.
 
-First, run the development server:
+## 🚀 Features
+- **Live Chat Experience** with a typing effect for AI responses.
+- **Markdown Support** for formatted bot messages.
+- **Smooth Animations** using Framer Motion.
+- **Command Support** (`/clear`, `/help` etc.).
+- **Dark Mode UI** for a modern and sleek look.
+- **Fast & Responsive** with a minimalistic design.
 
-```bash
+## 📦 Tech Stack
+- **Frontend:** React, TypeScript, Framer Motion, Tailwind CSS
+- **Backend:** API-based response fetching
+- **Animations:** Framer Motion
+- **Markdown Rendering:** react-showdown
+
+## 🔧 Installation
+To set up and run PockeTalke locally, follow these steps:
+
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/your-username/pocketalke.git
+cd pocketalke
+```
+
+### 2️⃣ Install Dependencies
+```sh
+npm install
+# or
+yarn install
+```
+
+### 3️⃣ Set Up Environment Variables
+Create a `.env.local` file in the root of your project and add:
+```sh
+NEXT_PUBLIC_API_URL=https://your-api-endpoint.com
+```
+*(This ensures the API URL is not hardcoded in your code.)*
+
+### 4️⃣ Run the Project
+```sh
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Then, open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📝 Commands
+| Command   | Description                  |
+|-----------|------------------------------|
+| `/clear`  | Clears the chat history      |
+| `/help`   | Shows available commands     |
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📸 Screenshots
+*Coming Soon...*
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Customization
+You can tweak the chatbot's behavior and appearance by modifying:
+- `components/Chatbot.tsx` (UI logic)
+- `styles/global.css` (Styling)
+- `API calls` in `sendMessage` function
 
-## Learn More
+## 🤝 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
 
-To learn more about Next.js, take a look at the following resources:
+## 📜 License
+This project is open-source and available under the MIT License.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
+🚀 **Made with ❤️ by #031 from WeOwls**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
